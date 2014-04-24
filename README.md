@@ -5,7 +5,7 @@ for faster and easier web development.
 
 ## Demo
 
-Look at [http://d.blank.vc](http://d.blank.vc) to see the source. Keep in mind it's only a blank white page.
+Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind it's only a copy'n'paste page from bootstrap theme.
 
 ## Functions
 
