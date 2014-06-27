@@ -37,6 +37,7 @@ function compress($buffer) {
 
 // bootstrap
 require('bootstrap.css');
+require('bootstrap-theme.css');
 
 // font awesome
 //require('font-awesome.css');

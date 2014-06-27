@@ -1,0 +1,21 @@
+commit 41879b9a74a00d660e324d8542a1b60ec5a8d935
+Author: Alexander Schmidt <alexander.schmidt@edvas.de>
+Date:   Thu Apr 24 08:43:20 2014 +0000
+
+    Update README.md
+    
+    Update demo url for bootstrap template
+
+diff --git a/README.md b/README.md
+index f2e8482..de685cc 100755
+--- a/README.md
++++ b/README.md
+@@ -5,7 +5,7 @@ for faster and easier web development.
+ 
+ ## Demo
+ 
+-Look at [http://d.blank.vc](http://d.blank.vc) to see the source. Keep in mind it's only a blank white page.
++Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind it's only a copy'n'paste page from bootstrap theme.
+ 
+ ## Functions
+ 

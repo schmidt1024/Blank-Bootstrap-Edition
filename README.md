@@ -17,9 +17,10 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 
 ## Addons 
 
-* [Bootstrap 3.1.1](http://getbootstrap.com/)
-* [Font Awesome 4.0.3](https://fortawesome.github.io/Font-Awesome/)
-* [LESS incl. less.js 1.7.0](http://lesscss.org/)
+* [Bootstrap 3.2.0](http://getbootstrap.com/)
+* [Font Awesome 4.1.0](https://fortawesome.github.io/Font-Awesome/)
+* [normalize.css 3.0.1](http://necolas.github.io/normalize.css/)
+* [LESS incl. less.js 1.7.3](http://lesscss.org/)
 * [SASS](http://sass-lang.com/)
 
 ## PSD
