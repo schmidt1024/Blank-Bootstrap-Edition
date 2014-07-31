@@ -1,5 +1,9 @@
 <?php 
 
+// variables
+$baseurl = $_GET['baseurl'];
+$path = getcwd();
+
 // initialize ob_gzhandler to send and compress data
 ob_start ("ob_gzhandler");
 // initialize compress function for whitespace removal
@@ -35,19 +39,16 @@ function compress($buffer) {
 	return $buffer;
 }
 
-// bootstrap
-require('bootstrap.css');
-require('bootstrap-theme.css');
-
-// font awesome
-//require('font-awesome.css');
-
-// template css
-require('template.css');
+// less compiler
+require_once 'less.php/Less.php';
+$parser = new Less_Parser();
+$parser->parseFile($path.'/template.less', $baseurl.'/');
+$parser->parse('@icon-font-path: "'.$baseurl.'/templates/frontend/fonts/";'); // glypicon path correction
+echo $parser->getCss();
 
 // load system stylesheets for system messages and default buttons
-require('../../../media/system/css/system.css');
-require('../../system/css/system.css');
-require('../../system/css/general.css');
+require("../../../media/system/css/system.css");
+require("../../system/css/system.css");
+require("../../system/css/general.css");
 
 ?>

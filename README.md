@@ -10,18 +10,17 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 ## Functions
 
 * Crazy fast with css compressor
+* Integrated less compiler
 * Develop with bootstrap for responsive web design
 * Scalable and customizable vector icons
 * Customizable error, offline and print page
-* less and sass support
 
 ## Addons 
 
 * [Bootstrap 3.2.0](http://getbootstrap.com/)
 * [Font Awesome 4.1.0](https://fortawesome.github.io/Font-Awesome/)
-* [normalize.css 3.0.1](http://necolas.github.io/normalize.css/)
-* [LESS incl. less.js 1.7.3](http://lesscss.org/)
-* [SASS](http://sass-lang.com/)
+* [less.php](https://github.com/oyejorge/less.php)
+* [holder.js](http://imsky.github.io/holder/)
 
 ## PSD
 

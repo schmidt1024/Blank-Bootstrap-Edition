@@ -1,4 +1,63 @@
-<?php defined('_JEXEC') or die;
+<?php
+/**
+ * @package     Joomla.Site
+ * @subpackage  Templates.protostar
+ *
+ * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ */
+
+defined('_JEXEC') or die;
+
+/**
+ * This is a file to add template specific chrome to pagination rendering.
+ *
+ * pagination_list_footer
+ * 	Input variable $list is an array with offsets:
+ * 		$list[limit]		: int
+ * 		$list[limitstart]	: int
+ * 		$list[total]		: int
+ * 		$list[limitfield]	: string
+ * 		$list[pagescounter]	: string
+ * 		$list[pageslinks]	: string
+ *
+ * pagination_list_render
+ * 	Input variable $list is an array with offsets:
+ * 		$list[all]
+ * 			[data]		: string
+ * 			[active]	: boolean
+ * 		$list[start]
+ * 			[data]		: string
+ * 			[active]	: boolean
+ * 		$list[previous]
+ * 			[data]		: string
+ * 			[active]	: boolean
+ * 		$list[next]
+ * 			[data]		: string
+ * 			[active]	: boolean
+ * 		$list[end]
+ * 			[data]		: string
+ * 			[active]	: boolean
+ * 		$list[pages]
+ * 			[{PAGE}][data]		: string
+ * 			[{PAGE}][active]	: boolean
+ *
+ * pagination_item_active
+ * 	Input variable $item is an object with fields:
+ * 		$item->base	: integer
+ * 		$item->link	: string
+ * 		$item->text	: string
+ *
+ * pagination_item_inactive
+ * 	Input variable $item is an object with fields:
+ * 		$item->base	: integer
+ * 		$item->link	: string
+ * 		$item->text	: string
+ *
+ * This gives template designers ultimate control over how pagination is rendered.
+ *
+ * NOTE: If you override pagination_item_active OR pagination_item_inactive you MUST override them both
+ */
 
 /**
  * Renders the pagination footer
@@ -53,7 +112,7 @@ function pagination_list_render($list)
 		}
 	}
 
-	$html = '<ul class="pagination pagination-sm">';
+	$html = '<ul class="pagination-list">';
 	$html .= $list['start']['data'];
 	$html .= $list['previous']['data'];
 
@@ -93,25 +152,25 @@ function pagination_item_active(&$item)
 	// Check for "Start" item
 	if ($item->text == JText::_('JLIB_HTML_START'))
 	{
-		$display = '<i class="fa fa-fast-backward"></i>';
+		$display = '<i class="icon-first"></i>';
 	}
 
 	// Check for "Prev" item
 	if ($item->text == JText::_('JPREV'))
 	{
-		$display = '<i class="fa fa-backward"></i>';
+		$display = '<i class="icon-previous"></i>';
 	}
 
 	// Check for "Next" item
 	if ($item->text == JText::_('JNEXT'))
 	{
-		$display = '<i class="fa fa-forward"></i>';
+		$display = '<i class="icon-next"></i>';
 	}
 
 	// Check for "End" item
 	if ($item->text == JText::_('JLIB_HTML_END'))
 	{
-		$display = '<i class="fa fa-fast-forward"></i>';
+		$display = '<i class="icon-last"></i>';
 	}
 
 	// If the display object isn't set already, just render the item with its text
@@ -138,25 +197,25 @@ function pagination_item_inactive(&$item)
 	// Check for "Start" item
 	if ($item->text == JText::_('JLIB_HTML_START'))
 	{
-		return '<li class="disabled"><a><i class="fa fa-fast-backward"></i></a></li>';
+		return '<li class="disabled"><a><i class="icon-first"></i></a></li>';
 	}
 
 	// Check for "Prev" item
 	if ($item->text == JText::_('JPREV'))
 	{
-		return '<li class="disabled"><a><i class="fa fa-backward"></i></a></li>';
+		return '<li class="disabled"><a><i class="icon-previous"></i></a></li>';
 	}
 
 	// Check for "Next" item
 	if ($item->text == JText::_('JNEXT'))
 	{
-		return '<li class="disabled"><a><i class="fa fa-forward"></i></a></li>';
+		return '<li class="disabled"><a><i class="icon-next"></i></a></li>';
 	}
 
 	// Check for "End" item
 	if ($item->text == JText::_('JLIB_HTML_END'))
 	{
-		return '<li class="disabled"><a><i class="fa fa-fast-forward"></i></a></li>';
+		return '<li class="disabled"><a><i class="icon-last"></i></a></li>';
 	}
 
 	// Check if the item is the active page

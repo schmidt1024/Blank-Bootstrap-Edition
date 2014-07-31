@@ -1,0 +1,69 @@
+/* FRONTEND LESS
+*********************************************/
+
+// Bootstrap
+@import "bootstrap/bootstrap.less";
+
+// Font Awesome
+@import "font-awesome/font-awesome.less";
+
+
+html {
+	overflow-y: scroll; /* scrollbar fix (prevent ugly left pull for lower content sites) */
+}
+
+body {
+	padding-top: 80px; 
+	padding-bottom: 30px;
+}
+
+#insidebar ul.unstyled {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+}
+
+#insidebar .form-control {
+	width: 100% !important;
+}
+
+
+
+/* MEDIA QUERIES
+*********************************************/
+
+/* Extra small devices (phones, less than 768px) */
+/* No media query -> mobile first strategy */
+
+/* Extra small devices (phones, less than 768px) */
+@media (max-width: 767px) {
+  .navbar div.search {
+	padding: 0 0 20px 0;
+	width: 100%;
+  }
+}
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  #mod-search-searchword {
+	margin-top: 7px;
+  }
+  .form-group {
+	padding: 5px 0;
+  }
+}
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+
+}
+
+/* for higher resolutions (android and retina) */
+@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (max--moz-device-pixel-ratio: 1.5) {
+  
+}
