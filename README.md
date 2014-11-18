@@ -17,8 +17,8 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 
 ## Addons 
 
-* [Bootstrap 3.2.0](http://getbootstrap.com/)
-* [Font Awesome 4.1.0](https://fortawesome.github.io/Font-Awesome/)
+* [Bootstrap 3.3.1](http://getbootstrap.com/)
+* [Font Awesome 4.2.0](https://fortawesome.github.io/Font-Awesome/)
 * [less.php](https://github.com/oyejorge/less.php)
 * [holder.js](http://imsky.github.io/holder/)
 
