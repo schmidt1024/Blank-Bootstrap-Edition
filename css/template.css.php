@@ -41,10 +41,11 @@ function compress($buffer) {
 
 // less compiler
 require_once 'less.php/Less.php';
-$parser = new Less_Parser();
-$parser->parseFile($path.'/template.less', $baseurl.'/');
-$parser->parse('@icon-font-path: "'.$baseurl.'/templates/frontend/fonts/";'); // glypicon path correction
-echo $parser->getCss();
+$less_files = array( $path.'/template.less' => $baseurl.'/' );
+$options = array( 'cache_dir' => $path.'/cache/' );
+$css_file_name = Less_Cache::Get( $less_files, $options );
+$compiled = file_get_contents( $baseurl.'/cache/'.$css_file_name );
+require('cache/'.$css_file_name);
 
 // load system stylesheets for system messages and default buttons
 require("../../../media/system/css/system.css");
