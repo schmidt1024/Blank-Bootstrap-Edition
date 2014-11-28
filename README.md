@@ -10,7 +10,7 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 ## Functions
 
 * Crazy fast with css compressor
-* Integrated less compiler
+* Integrated less compiler incl. caching
 * Develop with bootstrap for responsive web design
 * Scalable and customizable vector icons
 * Customizable error, offline and print page
