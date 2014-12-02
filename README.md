@@ -1,4 +1,4 @@
-# [Blank - Bootstrap Edition](http://blank.vc)
+# [Blank Bootstrap Edition](http://blank.vc)
 
 Light, powerful and free template for Joomla!
 for faster and easier web development.
@@ -36,7 +36,7 @@ Read the [wiki to get started](https://github.com/Bloggerschmidt/Blank-Template/
 
 ## Documentation
 
-Beginn to understand the whole template and [read the ebook](http://blank.vc/ebook.html).
+Beginn to understand the whole template and [read the ebook](http://blank.vc/ebook/levels).
 
 ## Licence
 
