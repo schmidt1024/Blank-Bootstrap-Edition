@@ -34,6 +34,10 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 
 Read the [wiki to get started](https://github.com/Bloggerschmidt/Blank-Template/wiki/Getting-started).
 
+## Blank
+
+Take a look at [Blank without Bootstrap](https://github.com/Bloggerschmidt/Blank).
+
 ## Documentation
 
 Beginn to understand the whole template and [read the ebook](http://blank.vc/ebook/levels).
