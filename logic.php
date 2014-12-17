@@ -25,5 +25,8 @@ $doc->setMetadata('x-ua-compatible','IE=edge,chrome=1');
 // bootstrap
 $doc->addScript($tpath.'/js/bootstrap.min.js');
 
+// template js
+$doc->addScript($tpath.'/js/logic.js');
+
 // css 
 $doc->addStyleSheet($tpath.'/css/template.css.php?baseurl='.$this->baseurl);
