@@ -18,11 +18,12 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 <body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')).' '.$active->alias.' '.$pageclass; ?>" role="document">
   
 	<!-- 
-		1. line is test code
-		2. line is example code
-		Do not use both lines together! 
-		Delete lines and files to start your own development.
-		Copy and paste the code of bootstrap.example.php to index.php when needed.
+		This is a comment to explain The following two lines written in php 
+		- bootstrap.test.php has test code
+		- bootstrap.example.php has example code
+		Note: Do not use both files together! Delete the following two lines 
+		and the two files to start your own development. You can copy and paste 
+		the code of bootstrap.example.php to index.php for a clean setup.
 	-->
 
 	<?php require_once 'html/bootstrap.test.php'; ?>
