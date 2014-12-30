@@ -40,7 +40,7 @@ function compress($buffer) {
 }
 
 // less compiler
-require_once 'less.php/Less.php';
+require_once 'less.php/less.php';
 $less_files = array( $path.'/template.less' => $baseurl.'/' );
 $options = array( 'cache_dir' => $path.'/cache/' );
 $css_file_name = Less_Cache::Get( $less_files, $options );
