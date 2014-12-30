@@ -35,6 +35,7 @@
 	<positions><!-- define the positions for modules here -->
 		<position>navbar</position>
 		<position>breadcrumbs</position>
+		<position>largebar</position>
 		<position>sidebar</position>
 		<position>debug</position>
 	</positions>
