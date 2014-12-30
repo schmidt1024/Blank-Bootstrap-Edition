@@ -19,7 +19,7 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 
 * [Bootstrap 3.3.1](http://getbootstrap.com/)
 * [Font Awesome 4.2.0](https://fortawesome.github.io/Font-Awesome/)
-* [less.php 1.7.0.2](https://github.com/oyejorge/less.php)
+* [less.php 1.7.0.1](https://github.com/oyejorge/less.php)
 * [holder.js 2.4.1](http://imsky.github.io/holder/)
 
 ## PSD
