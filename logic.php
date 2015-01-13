@@ -29,4 +29,4 @@ $doc->addScript($tpath.'/js/bootstrap.min.js');
 $doc->addScript($tpath.'/js/logic.js');
 
 // template css 
-$doc->addStyleSheet($tpath.'/css/template.css.php?baseurl='.$this->baseurl);
+$doc->addStyleSheet($tpath.'/css/template.css.php);
