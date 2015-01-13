@@ -1,4 +1,4 @@
-# [Blank Bootstrap Edition 3.5.0](http://blank.vc)
+# [Blank Bootstrap Edition 3.5.1](http://blank.vc)
 
 Light, powerful and free template for Joomla!
 for faster and easier web development.
