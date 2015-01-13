@@ -1,9 +1,5 @@
 <?php 
 
-// variables
-$baseurl = $_GET['baseurl'];
-$path = getcwd();
-
 // initialize ob_gzhandler to send and compress data
 ob_start ("ob_gzhandler");
 // initialize compress function for whitespace removal
@@ -40,11 +36,12 @@ function compress($buffer) {
 }
 
 // less compiler
+$path = getcwd();
 require_once 'less.php/less.php';
-$less_files = array( $path.'/template.less' => $baseurl.'/' );
+$less_files = array( $path.'/template.less' => $_SERVER['REQUEST_URI'] );
 $options = array( 'cache_dir' => $path.'/cache/' );
 $css_file_name = Less_Cache::Get( $less_files, $options );
-$compiled = file_get_contents( $baseurl.'/cache/'.$css_file_name );
+$compiled = file_get_contents( $_SERVER['REQUEST_URI'].'cache/'.$css_file_name );
 require('cache/'.$css_file_name);
 
 // load system stylesheets for system messages and default buttons
