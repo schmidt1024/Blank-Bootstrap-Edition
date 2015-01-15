@@ -8,6 +8,7 @@ $active = $app->getMenu()->getActive();
 $params = $app->getParams();
 $pageclass = $params->get('pageclass_sfx');
 $tpath = $this->baseurl.'/templates/'.$this->template;
+$templateparams	= $app->getTemplate(true)->params;
 
 // generator tag
 $this->setGenerator(null);
@@ -28,5 +29,10 @@ $doc->addScript($tpath.'/js/bootstrap.min.js');
 // template js
 $doc->addScript($tpath.'/js/logic.js');
 
-// template css 
-$doc->addStyleSheet($tpath.'/css/template.css.php');
+// template css
+if ($templateparams->get('runless', 1) == 1)
+{
+	require "runless.php";
+}
+
+$doc->addStyleSheet($tpath.'/css/template.css');

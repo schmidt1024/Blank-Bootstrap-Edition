@@ -39,5 +39,15 @@
 		<position>sidebar</position>
 		<position>debug</position>
 	</positions>
-	
+	<config>
+		<fields name="params">
+			<fieldset name="advanced">
+				<field name="runless" type="radio" default="1" label="Run Less Compiler" description="">
+					<option value="0">JNO</option>
+					<option value="1">JYES</option>
+				</field>
+			</fieldset>
+		</fields>
+	</config>
+
 </extension>
