@@ -26,6 +26,7 @@
 		<filename>index.php</filename>
 		<filename>logic.php</filename>
 		<filename>offline.php</filename>
+		<filename>runless.php</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<filename>favicon.ico</filename>
@@ -39,6 +40,7 @@
 		<position>sidebar</position>
 		<position>debug</position>
 	</positions>
+	
 	<config>
 		<fields name="params">
 			<fieldset name="advanced">

@@ -1,7 +1,8 @@
 <?php defined( '_JEXEC' ) or die;
 
 // begin function compress
-function compress($buffer) {
+function compress($buffer) 
+{
 	// remove comments
 	$buffer = preg_replace('!/\*[^*]*\*+([^/][^*]*\*+)*/!', '', $buffer);
 	// remove tabs, spaces, new lines, etc.
@@ -34,9 +35,9 @@ if (file_exists($lesspath.'/cache/'.$css_file_name))
 {
 	// merge files
 	$compiled = file_get_contents( $lesspath.'/cache/'.$css_file_name );
-	$compiled .= file_get_contents("../../media/system/css/system.css");
-	$compiled .= file_get_contents("../system/css/system.css");
-	$compiled .= file_get_contents("../system/css/general.css");
+	$compiled .= file_get_contents(JUri::base().'/media/system/css/system.css');
+	$compiled .= file_get_contents(JPATH_THEMES.'/system/css/system.css');
+	$compiled .= file_get_contents(JPATH_THEMES.'/system/css/general.css');
 
 	$compressed = compress($compiled);
 

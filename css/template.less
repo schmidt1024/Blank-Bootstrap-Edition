@@ -17,6 +17,22 @@ body {
 	padding-bottom: 30px;
 }
 
+
+
+/* YOUR CSS HERE */
+
+
+
+@media (min-width: 768px) {}
+
+@media (min-width: 992px) {}
+
+@media (min-width: 1170px) {}
+
+
+
+/* bootstrap search form fixes */
+
 #insidebar ul.unstyled {
 	list-style: none;
 	margin: 0;
@@ -27,43 +43,21 @@ body {
 	width: 100% !important;
 }
 
-
-
-/* MEDIA QUERIES
-*********************************************/
-
-/* Extra small devices (phones, less than 768px) */
-/* No media query -> mobile first strategy */
-
-/* Extra small devices (phones, less than 768px) */
-@media (max-width: 767px) {
-  .navbar div.search {
-	padding: 0 0 20px 0;
-	width: 100%;
-  }
+.navbar div.search {
+	@media (max-width: 767px) {
+		padding: 0 0 20px 0;
+		width: 100%;
+	}
 }
 
-/* Small devices (tablets, 768px and up) */
-@media (min-width: 768px) {
-  #mod-search-searchword {
-	margin-top: 7px;
-  }
-  .form-group {
-	padding: 5px 0;
-  }
+#mod-search-searchword {
+	@media (min-width: 768px) {
+		margin-top: 7px;
+	}
 }
 
-/* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {
-
-}
-
-/* Large devices (large desktops, 1200px and up) */
-@media (min-width: 1200px) {
-
-}
-
-/* for higher resolutions (android and retina) */
-@media screen and (-webkit-min-device-pixel-ratio: 1.5), screen and (max--moz-device-pixel-ratio: 1.5) {
-  
+.form-group {
+	@media (min-width: 768px) {
+		padding: 5px 0;
+	}
 }

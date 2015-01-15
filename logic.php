@@ -16,23 +16,15 @@ $this->setGenerator(null);
 // force latest IE & chrome frame
 $doc->setMetadata('x-ua-compatible','IE=edge,chrome=1');
 
-// jquery
-// $doc->addScript($tpath.'/js/jquery-2.1.1.min.js');
-// $doc->addScript($tpath.'/js/jquery-noconflict.js');
-
-// holder
-// $doc->addScript($tpath.'/js/holder.js');
-
-// bootstrap
+// js
+JHtml::_('jquery.framework');
 $doc->addScript($tpath.'/js/bootstrap.min.js');
+$doc->addScript($tpath.'/js/logic.js'); // <- use for custom script
 
-// template js
-$doc->addScript($tpath.'/js/logic.js');
-
-// template css
+// css
 if ($templateparams->get('runless', 1) == 1)
 {
-	require "runless.php";
+	require 'runless.php';
 }
 
 $doc->addStyleSheet($tpath.'/css/template.css');
