@@ -1,4 +1,4 @@
-# [Blank Bootstrap Edition 3.6.0](http://blank.vc)
+# [Blank Bootstrap Edition 3.7.0](http://blank.vc)
 
 Light, powerful and free template for Joomla!
 for faster and easier web development.
@@ -17,7 +17,7 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 
 ## Addons 
 
-* [Bootstrap 3.3.1](http://getbootstrap.com/)
+* [Bootstrap 3.3.2](http://getbootstrap.com/)
 * [Font Awesome 4.2.0](https://fortawesome.github.io/Font-Awesome/)
 * [less.php 1.7.0.1](https://github.com/oyejorge/less.php)
 
