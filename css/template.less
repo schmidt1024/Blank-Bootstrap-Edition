@@ -1,22 +1,12 @@
-/* FRONTEND LESS
-*********************************************/
-
-// Bootstrap
-@import "bootstrap/bootstrap.less";
-
-// Font Awesome
-@import "font-awesome/font-awesome.less";
-@fa-font-path: "../templates/frontend/fonts"; // path correction
-
-
+/* FRONTEND 
+************/
 
 html {
-	overflow-y: scroll; /* scrollbar fix (prevent ugly left pull for lower content sites) */
+	overflow-y: scroll;
 }
 
 body {
-	padding-top: 80px; 
-	padding-bottom: 30px;
+
 }
 
 
@@ -30,36 +20,3 @@ body {
 @media (min-width: 992px) {}
 
 @media (min-width: 1170px) {}
-
-
-
-/* bootstrap search form fixes */
-
-#insidebar ul.unstyled {
-	list-style: none;
-	margin: 0;
-	padding: 0;
-}
-
-#insidebar .form-control {
-	width: 100% !important;
-}
-
-.navbar div.search {
-	@media (max-width: 767px) {
-		padding: 0 0 20px 0;
-		width: 100%;
-	}
-}
-
-#mod-search-searchword {
-	@media (min-width: 768px) {
-		margin-top: 7px;
-	}
-}
-
-.form-group {
-	@media (min-width: 768px) {
-		padding: 5px 0;
-	}
-}
