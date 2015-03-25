@@ -16,26 +16,29 @@
 	]]></description>
 	
 	<files>
+		<folder>build</folder>
 		<folder>css</folder>
 		<folder>fonts</folder>
 		<folder>html</folder>
 		<folder>images</folder>
+		<folder>inc</folder>
 		<folder>js</folder>
 		<filename>component.php</filename>
 		<filename>error.php</filename>
+		<filename>favicon.ico</filename>
+		<filename>gulpfile.js</filename>
 		<filename>index.php</filename>
-		<filename>logic.php</filename>
 		<filename>offline.php</filename>
+		<filename>package.json</filename>
+		<filename>README.md</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
-		<filename>favicon.ico</filename>
 		<filename>templateDetails.xml</filename>
 	</files>
 	
 	<positions>
 		<position>navbar</position>
 		<position>breadcrumbs</position>
-		<position>largebar</position>
 		<position>sidebar</position>
 		<position>debug</position>
 	</positions>
