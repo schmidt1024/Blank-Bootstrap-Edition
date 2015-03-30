@@ -1,4 +1,4 @@
-jQuery(document).ready(function($) {
+jQuery(function($) {
 
 	// YOUR SCRIPT HERE
 	
