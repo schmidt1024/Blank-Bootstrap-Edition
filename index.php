@@ -3,13 +3,10 @@
 include_once JPATH_THEMES.'/'.$this->template.'/inc/logic.php';
 
 ?><!doctype html>
-
 <!--[if IE 8]><html lang="<?php echo $this->language; ?>" class="ltie9"><![endif]-->
 <!--[if gt IE 8]><!--><html lang="<?php echo $this->language; ?>"><!--<![endif]-->
-
 <head>
-	<jdoc:include type="head" />
-	<?php include_once JPATH_THEMES.'/'.$this->template.'/inc/head.php'; ?>
+<jdoc:include type="head" /><?php include_once JPATH_THEMES.'/'.$this->template.'/inc/head.php'; ?>
 </head>
   
 <body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')).' '.$active->alias.' '.$pageclass; ?>" role="document">
