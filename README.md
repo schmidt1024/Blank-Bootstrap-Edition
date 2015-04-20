@@ -7,11 +7,11 @@ for faster and easier web development.
 
 Via node.js
 
-  npm install
+    npm install
 
 Run Gulp
 
-  gulp watch
+    gulp watch
 
 ## Demo
 
