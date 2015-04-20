@@ -58,6 +58,12 @@ Take a look at [Blank without Bootstrap](https://github.com/Bloggerschmidt/Blank
 
 Beginn to understand the whole template and [read the ebook](http://blank.vc/ebook/levels).
 
+## Browser Support
+
+![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png)
+--- | --- | --- | --- | --- |
+Latest ✔ | Latest ✔ | 9+ ✔ | 7.1+ ✔ | Latest ✔ |
+
 ## Licence
 
 The Blank Template is opensource software released under the [GPL](http://www.gnu.org/licenses/gpl-2.0.txt).
