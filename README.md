@@ -5,13 +5,23 @@ for faster and easier web development.
 
 ## Install
 
-Via node.js
+First of all install [Node](http://nodejs.org/). This template will be build with [Gulp](http://gulpjs.com/). If you haven't used Gulp before, you need to install ``gulp`` global.
+
+    npm install -g gulp
+
+Clone this repo
+
+    git clone https://github.com/Bloggerschmidt/Blank-Bootstrap-Edition.git
+
+Install Node dependencies
 
     npm install
 
-Run Gulp
+Run Gulp to lint, build and minify
 
     gulp watch
+
+The building files are stored in folder /build in template directory.
 
 ## Demo
 
