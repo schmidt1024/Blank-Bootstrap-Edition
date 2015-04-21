@@ -3,6 +3,14 @@
 Light, powerful and free template for Joomla!
 for faster and easier web development.
 
+## Joomla Support
+
+3 +
+
+## Browser Support
+
+IE 9 +
+
 ## Install
 
 First of all install [Node](http://nodejs.org/). This template will be build with [Gulp](http://gulpjs.com/). If you haven't used Gulp before, you need to install ``gulp`` global.
@@ -45,12 +53,6 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 * App Icon Template [2.0].psd
 * template_preview.psd
 * template_thumbnail.psd
-
-## Browser Support
-
-![Chrome](https://raw.github.com/alrra/browser-logos/master/chrome/chrome_48x48.png) | ![Firefox](https://raw.github.com/alrra/browser-logos/master/firefox/firefox_48x48.png) | ![IE](https://raw.github.com/alrra/browser-logos/master/internet-explorer/internet-explorer_48x48.png) | ![Safari](https://raw.github.com/alrra/browser-logos/master/safari/safari_48x48.png) | ![Opera](https://raw.github.com/alrra/browser-logos/master/opera/opera_48x48.png)
---- | --- | --- | --- | --- |
-Latest ✔ | Latest ✔ | 9+ ✔ | 7.1+ ✔ | Latest ✔ |
 
 ## Get Started
 
