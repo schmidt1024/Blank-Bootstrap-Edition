@@ -3,6 +3,10 @@
 Light, powerful and free template for Joomla!
 for faster and easier web development.
 
+## Joomla Support
+
+3+
+
 ## Demo
 
 Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind it's only a copy'n'paste page from bootstrap theme.
