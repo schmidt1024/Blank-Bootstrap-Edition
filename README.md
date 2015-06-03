@@ -13,13 +13,9 @@ IE 9 +
 
 ## Install
 
-First of all install [Node](http://nodejs.org/). This template will be build with [Gulp](http://gulpjs.com/). If you haven't used Gulp before, you need to install ``gulp`` global.
+Install it like a normal template in Joomla! backend. Then install [Node](http://nodejs.org/). This template will be build with [Gulp](http://gulpjs.com/). If you haven't used Gulp before, you need to install ``gulp`` global.
 
     npm install -g gulp
-
-Clone this repo
-
-    git clone https://github.com/Bloggerschmidt/Blank-Bootstrap-Edition.git
 
 Install Node dependencies
 
