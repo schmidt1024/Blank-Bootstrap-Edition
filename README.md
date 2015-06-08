@@ -17,15 +17,19 @@ Install it like a normal template in Joomla! backend. Then install [Node](http:/
 
     npm install -g gulp
 
-Install Node dependencies
+Open a terminal an got to the template folder.
+
+    cd C:\xampp\htdocs\joomla\templates\frontend
+
+Install Node dependencies.
 
     npm install
 
-Run Gulp to lint, build and minify
+Run Gulp to lint, build and minify.
 
     gulp watch
 
-The building files are stored in folder /build in template directory.
+The building files are stored in folder /build in template directory. See gulfile.js to recognize automation.
 
 ## Demo
 
