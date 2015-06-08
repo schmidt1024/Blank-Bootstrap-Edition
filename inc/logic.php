@@ -52,14 +52,7 @@ foreach($doc->_styleSheets as $name=>$style)
 }
 
 // js
-// JHtml::_('jquery.framework');
-$doc->addScript($tpath.'/js/bootstrap.min.js');
-$doc->addScript($tpath.'/js/script.js');
-// $doc->addScript($tpath.'/build/app.js');
-
+$doc->addScript($tpath.'/build/app.js');
 
 // css
-$doc->addStyleSheet($tpath.'/css/bootstrap.css');
-$doc->addStyleSheet($tpath.'/css/font-awesome.css');
-$doc->addStyleSheet($tpath.'/css/template.css');
-// $doc->addStyleSheet($tpath.'/build/style.css');
+$doc->addStyleSheet($tpath.'/build/style.css');
