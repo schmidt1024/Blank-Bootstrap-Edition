@@ -9,7 +9,7 @@
 
 defined('_JEXEC') or die;
 
-JHtml::_('bootstrap.tooltip');
+//JHtml::_('bootstrap.tooltip');
 
 ?>
 
