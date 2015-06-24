@@ -25,7 +25,7 @@ Install Node dependencies.
 
     npm install
 
-Run Gulp to lint, build and minify.
+Run Gulp for build and minify.
 
     gulp watch
 
