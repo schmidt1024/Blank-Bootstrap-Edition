@@ -1,229 +1,87 @@
 <?php
 /**
- * @package     Joomla.Site
- * @subpackage  Templates.protostar
+ * @package     Joomla.Platform
+ * @subpackage  HTML
  *
- * @copyright   Copyright (C) 2005 - 2014 Open Source Matters, Inc. All rights reserved.
- * @license     GNU General Public License version 2 or later; see LICENSE.txt
+ * @copyright   Copyright (C) 2005 - 2012 Open Source Matters, Inc. All rights reserved.
+ * @license     GNU General Public License version 2 or later; see LICENSE
  */
 
-defined('_JEXEC') or die;
+defined('JPATH_PLATFORM') or die;
 
 /**
- * This is a file to add template specific chrome to pagination rendering.
+ * Pagination Class.  Provides a common interface for content pagination for the
+ * Joomla! Platform.
  *
- * pagination_list_footer
- * 	Input variable $list is an array with offsets:
- * 		$list[limit]		: int
- * 		$list[limitstart]	: int
- * 		$list[total]		: int
- * 		$list[limitfield]	: string
- * 		$list[pagescounter]	: string
- * 		$list[pageslinks]	: string
- *
- * pagination_list_render
- * 	Input variable $list is an array with offsets:
- * 		$list[all]
- * 			[data]		: string
- * 			[active]	: boolean
- * 		$list[start]
- * 			[data]		: string
- * 			[active]	: boolean
- * 		$list[previous]
- * 			[data]		: string
- * 			[active]	: boolean
- * 		$list[next]
- * 			[data]		: string
- * 			[active]	: boolean
- * 		$list[end]
- * 			[data]		: string
- * 			[active]	: boolean
- * 		$list[pages]
- * 			[{PAGE}][data]		: string
- * 			[{PAGE}][active]	: boolean
- *
- * pagination_item_active
- * 	Input variable $item is an object with fields:
- * 		$item->base	: integer
- * 		$item->link	: string
- * 		$item->text	: string
- *
- * pagination_item_inactive
- * 	Input variable $item is an object with fields:
- * 		$item->base	: integer
- * 		$item->link	: string
- * 		$item->text	: string
- *
- * This gives template designers ultimate control over how pagination is rendered.
- *
- * NOTE: If you override pagination_item_active OR pagination_item_inactive you MUST override them both
- */
-
-/**
- * Renders the pagination footer
- *
- * @param   array  $list  Array containing pagination footer
- *
- * @return  string  HTML markup for the full pagination footer
- *
- * @since   3.0
- */
-function pagination_list_footer($list)
-{
-	$html = "<div class=\"pagination\">\n";
-	$html .= $list['pageslinks'];
-	$html .= "\n<input type=\"hidden\" name=\"" . $list['prefix'] . "limitstart\" value=\"" . $list['limitstart'] . "\" />";
-	$html .= "\n</div>";
-
-	return $html;
-}
-
-/**
- * Renders the pagination list
- *
- * @param   array  $list  Array containing pagination information
- *
- * @return  string  HTML markup for the full pagination object
- *
- * @since   3.0
+ * @package     Joomla.Platform
+ * @subpackage  HTML
+ * @since       11.1
  */
 function pagination_list_render($list)
 {
-	// Calculate to display range of pages
-	$currentPage = 1;
-	$range = 1;
-	$step = 5;
-	foreach ($list['pages'] as $k => $page)
-	{
-		if (!$page['active'])
-		{
-			$currentPage = $k;
-		}
-	}
-	if ($currentPage >= $step)
-	{
-		if ($currentPage % $step == 0)
-		{
-			$range = ceil($currentPage / $step) + 1;
-		}
-		else
-		{
-			$range = ceil($currentPage / $step);
-		}
-	}
-
-	$html = '<ul class="pagination-list">';
+	// Reverse output rendering for right-to-left display.
+	$app = JFactory::getApplication();
+	$html = '<nav><ul class="pagination">';
 	$html .= $list['start']['data'];
 	$html .= $list['previous']['data'];
-
-	foreach ($list['pages'] as $k => $page)
+	foreach ($list['pages'] as $page)
 	{
-		if (in_array($k, range($range * $step - ($step + 1), $range * $step)))
-		{
-			if (($k % $step == 0 || $k == $range * $step - ($step + 1)) && $k != $currentPage && $k != $range * $step - $step)
-			{
-				$page['data'] = preg_replace('#(<a.*?>).*?(</a>)#', '$1...$2', $page['data']);
-			}
-		}
-
-		$html .= $page['data'];
+			$html .= $page['data'];
 	}
-
 	$html .= $list['next']['data'];
 	$html .= $list['end']['data'];
+	$html .= '</ul></nav>';
 
-	$html .= '</ul>';
 	return $html;
 }
-
 /**
- * Renders an active item in the pagination block
+ * Method to create an active pagination link to the item
  *
- * @param   JPaginationObject  $item  The current pagination object
+ * @param   JPaginationObject  &$item  The object with which to make an active link.
  *
- * @return  string  HTML markup for active item
+ * @return   string  HTML link
  *
- * @since   3.0
+ * @since    11.1
  */
 function pagination_item_active(&$item)
 {
-	$class = '';
-
-	// Check for "Start" item
-	if ($item->text == JText::_('JLIB_HTML_START'))
+	$app = JFactory::getApplication();
+	if ($app->isAdmin())
 	{
-		$display = '<i class="icon-first"></i>';
+		if ($item->base > 0)
+		{
+			return "<li><a title=\"" . $item->text . "\" onclick=\"document.adminForm." . $this->prefix . "limitstart.value=" . $item->base
+				. "; Joomla.submitform();return false;\">" . $item->text . "</a></li>";
+		}
+		else
+		{
+			return "<li><a title=\"" . $item->text . "\" onclick=\"document.adminForm." . $this->prefix
+				. "limitstart.value=0; Joomla.submitform();return false;\">" . $item->text . "</a></li>";
+		}
 	}
-
-	// Check for "Prev" item
-	if ($item->text == JText::_('JPREV'))
+	else
 	{
-		$display = '<i class="icon-previous"></i>';
+		return "<li><a title=\"" . $item->text . "\" href=\"" . $item->link . "\">" . $item->text . "</a></li>";
 	}
-
-	// Check for "Next" item
-	if ($item->text == JText::_('JNEXT'))
-	{
-		$display = '<i class="icon-next"></i>';
-	}
-
-	// Check for "End" item
-	if ($item->text == JText::_('JLIB_HTML_END'))
-	{
-		$display = '<i class="icon-last"></i>';
-	}
-
-	// If the display object isn't set already, just render the item with its text
-	if (!isset($display))
-	{
-		$display = $item->text;
-		$class   = ' class="hidden-phone"';
-	}
-
-	return '<li' . $class . '><a title="' . $item->text . '" href="' . $item->link . '" class="pagenav">' . $display . '</a></li>';
 }
-
 /**
- * Renders an inactive item in the pagination block
+ * Method to create an inactive pagination string
  *
- * @param   JPaginationObject  $item  The current pagination object
+ * @param   object  &$item  The item to be processed
  *
- * @return  string  HTML markup for inactive item
+ * @return  string
  *
- * @since   3.0
+ * @since   11.1
  */
 function pagination_item_inactive(&$item)
 {
-	// Check for "Start" item
-	if ($item->text == JText::_('JLIB_HTML_START'))
+	$app = JFactory::getApplication();
+	if ($app->isAdmin())
 	{
-		return '<li class="disabled"><a><i class="icon-first"></i></a></li>';
+		return "<li><a href=\"#\">" . $item->text . "</a></li>";
 	}
-
-	// Check for "Prev" item
-	if ($item->text == JText::_('JPREV'))
+	else
 	{
-		return '<li class="disabled"><a><i class="icon-previous"></i></a></li>';
+		return "<li class=\"disabled\"><a href=\"#\">" . $item->text . "</a></li>";
 	}
-
-	// Check for "Next" item
-	if ($item->text == JText::_('JNEXT'))
-	{
-		return '<li class="disabled"><a><i class="icon-next"></i></a></li>';
-	}
-
-	// Check for "End" item
-	if ($item->text == JText::_('JLIB_HTML_END'))
-	{
-		return '<li class="disabled"><a><i class="icon-last"></i></a></li>';
-	}
-
-	// Check if the item is the active page
-	if (isset($item->active) && ($item->active))
-	{
-		return '<li class="active hidden-phone"><a>' . $item->text . '</a></li>';
-	}
-
-	// Doesn't match any other condition, render a normal item
-	return '<li class="disabled hidden-phone"><a>' . $item->text . '</a></li>';
 }
