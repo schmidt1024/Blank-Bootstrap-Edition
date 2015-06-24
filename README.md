@@ -3,7 +3,7 @@
 Light, powerful and free template for Joomla!
 for faster and easier web development.
 
-## Joomla Support
+## Joomla
 
 3+
 
