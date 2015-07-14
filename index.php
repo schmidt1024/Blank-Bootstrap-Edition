@@ -20,7 +20,7 @@ include_once JPATH_THEMES.'/'.$this->template.'/logic.php';
 	<![endif]-->
 </head>
   
-<body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')).' '.$active->alias.' '.$pageclass; ?>" role="document">
+<body class="<?php echo (($menu->getActive() == $menu->getDefault()) ? ('front') : ('site')).' '.$active->alias.' '.$pageclass; ?>">
 
 	<?php require_once 'html/bootstrap.test.php'; // test only - delete this line ?>
 
