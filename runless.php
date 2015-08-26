@@ -28,7 +28,7 @@ $lesspath = __DIR__ . '/css';
 require_once $lesspath . '/less.php/less.php';
 $less_files = array( $lesspath . '/template.less' => $uri);
 $cache_dir = './cache/css/';
-$options = array( 'cache_dir' => $lesspath.'/cache/' );
+$options = array( 'cache_dir' => $cache_dir );
 $css_file_name = Less_Cache::Get( $less_files, $options );
 $compiled = file_get_contents( $cache_dir.$css_file_name );
 
