@@ -30,7 +30,6 @@ $less_files = array( $lesspath . '/template.less' => $uri);
 $cache_dir = './cache/css/';
 $options = array( 'cache_dir' => $cache_dir );
 $css_file_name = Less_Cache::Get( $less_files, $options );
-$compiled = file_get_contents( $cache_dir.$css_file_name );
 
 if (file_exists($cache_dir.$css_file_name))
 {
