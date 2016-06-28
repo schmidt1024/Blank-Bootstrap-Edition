@@ -41,9 +41,9 @@ Read the [wiki to get started](https://github.com/Bloggerschmidt/Blank-Template/
 
 Take a look at [Blank without Bootstrap](https://github.com/Bloggerschmidt/Blank).
 
-## Documentation
+## ~~Documentation~~
 
-Beginn to understand the whole template and [read the ebook](http://blank.vc/ebook/levels).
+~~Beginn to understand the whole template and [read the ebook](http://blank.vc/ebook/levels).~~
 
 ## Licence
 
