@@ -43,7 +43,7 @@ Take a look at [Blank without Bootstrap](https://github.com/Bloggerschmidt/Blank
 
 ## ~~Documentation~~
 
-~~Beginn to understand the whole template and [read the ebook](http://blank.vc/ebook/levels).~~
+~~Beginn to understand the whole template and read the ebook.~~
 
 ## Licence
 
