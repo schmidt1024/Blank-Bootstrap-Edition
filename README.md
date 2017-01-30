@@ -43,8 +43,8 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 
 ## Addons 
 
-* [Bootstrap 3.3.5](http://getbootstrap.com/)
-* [Font Awesome 4.3.0](https://fortawesome.github.io/Font-Awesome/)
+* [Bootstrap 3.3.7](http://getbootstrap.com/)
+* [Font Awesome 4.7.0](https://fortawesome.github.io/Font-Awesome/)
 
 ## PSD
 

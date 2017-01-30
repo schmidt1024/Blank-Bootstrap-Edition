@@ -4,7 +4,7 @@
 
 var gulp       		= require('gulp');
 var uglify     		= require('gulp-uglify');
-var minifyCSS  		= require('gulp-minify-css');
+var cleanCSS 		= require('gulp-clean-css');
 var concat     		= require('gulp-concat');
 var less       		= require('gulp-less');
 var autoprefix 		= require('gulp-autoprefixer');
@@ -68,7 +68,7 @@ gulp.task('template-css', function () {
 	gulp.src([
 		'css/template.css'
 		])
-		.pipe(minifyCSS())
+		.pipe(cleanCSS())
 		.pipe(concat('style.css'))
 		.pipe(gulp.dest('build'))
 		.pipe(notify({message:'template -> style.css'}));
