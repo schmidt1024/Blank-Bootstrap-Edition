@@ -13,11 +13,11 @@ IE 9 +
 
 ## Install
 
-Install it like a normal template in Joomla! backend. Then install [Node](http://nodejs.org/). This template will be build with [Gulp](http://gulpjs.com/). If you haven't used Gulp before, you need to install ``gulp`` global.
+Install it like a normal template in Joomla! backend. Then install [Node](http://nodejs.org/). This template will be built with [Gulp](http://gulpjs.com/). If you haven't used Gulp before, you need to install ``gulp`` global.
 
     npm install -g gulp
 
-Open a terminal an got to the template folder.
+Open a terminal and go to the template folder.
 
     cd C:\xampp\htdocs\joomla\templates\frontend
 
@@ -29,7 +29,7 @@ Run Gulp for build and minify.
 
     gulp watch
 
-The building files are stored in folder /build in template directory. See gulfile.js to recognize automation.
+The building files are stored in folder /build in template directory. See gulpfile.js to recognize automation.
 
 ## Demo
 
