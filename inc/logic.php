@@ -10,6 +10,16 @@ $pageclass = $params->get('pageclass_sfx');
 $tpath = $this->baseurl.'/templates/'.$this->template;
 $templateparams	= $app->getTemplate(true)->params;
 
+// params for body tag
+$option 		= JRequest::getCmd('option');
+$view 			= JRequest::getCmd('view');
+$layout 		= JRequest::getCmd('layout');
+$page 			= JRequest::getCmd('page');
+$task 			= JRequest::getCmd('task');
+$id 			= JRequest::getInt('id');
+$itemid 		= JRequest::getInt('Itemid');
+$tmpl 			= JRequest::getCmd('tmpl');
+
 // generator tag
 $this->setGenerator(null);
 
