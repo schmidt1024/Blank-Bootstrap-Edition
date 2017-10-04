@@ -1,15 +1,7 @@
-# [Blank Bootstrap Edition 4.0.0](http://blank.vc)
+# [Blank Bootstrap Edition 4.1.0](http://blank.vc)
 
 Light, powerful and free template for Joomla!
 for faster and easier web development.
-
-## Joomla
-
-3 +
-
-## Browser
-
-IE 9 +
 
 ## Install
 
@@ -27,7 +19,7 @@ Install Node dependencies.
 
 Run Gulp for build and minify.
 
-    gulp watch
+    gulp
 
 The building files are stored in folder /build in template directory. See gulpfile.js to recognize automation.
 
@@ -43,7 +35,7 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 
 ## Addons 
 
-* [Bootstrap 3.3.7](http://getbootstrap.com/)
+* [Bootstrap 4.0.0.beta](http://getbootstrap.com/)
 * [Font Awesome 4.7.0](https://fortawesome.github.io/Font-Awesome/)
 
 ## PSD
@@ -53,10 +45,6 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 * App Icon Template [2.0].psd
 * template_preview.psd
 * template_thumbnail.psd
-
-## Get Started
-
-Read the [wiki to get started](https://github.com/Bloggerschmidt/Blank-Template/wiki/Getting-started).
 
 ## Licence
 

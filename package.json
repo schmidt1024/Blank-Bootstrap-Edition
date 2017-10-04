@@ -1,22 +1,37 @@
 {
   "name": "blank-bootstrap-edition",
+  "version": "4.1.0",
   "description": "Light, powerful and free template for Joomla!",
-  "version": "4.0.0",
-  "homepage": "http://blank.vc",
-  "author": "Alexander Schmidt",
-  "private": true,
+  "main": "gulpfile.js",
+  "dependencies": {
+    "bootstrap": "^4.0.0-beta",
+    "browser-sync": "^2.18.13",
+    "font-awesome": "^4.7.0",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-concat": "^2.2.0",
+    "gulp-uglify": "^0.2.1",
+    "jquery": "^3.2.1",
+    "popper.js": "^1.12.5"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
   "repository": {
     "type": "git",
-    "url": "git://github.com/Bloggerschmidt/Blank-Bootstrap-Edition.git"
+    "url": "git+https://github.com/Bloggerschmidt/Blank-Bootstrap-Edition.git"
   },
-  "devDependencies": {
-    "gulp": "^3.8.11",
-    "gulp-autoprefixer": "^2.1.0",
-    "gulp-clean-css": "^2.3.2",
-    "gulp-concat": "^2.2.0",
-    "gulp-convert-encoding": "0.0.3",
-    "gulp-less": "^3.0.1",
-    "gulp-notify": "^2.2.0",
-    "gulp-uglify": "^0.2.1"
-  }
+  "keywords": [
+    "joomla",
+    "template",
+    "frontend",
+    "bootstrap"
+  ],
+  "author": "Alexander Schmidt",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/Bloggerschmidt/Blank-Bootstrap-Edition/issues"
+  },
+  "homepage": "https://github.com/Bloggerschmidt/Blank-Bootstrap-Edition#readme"
 }

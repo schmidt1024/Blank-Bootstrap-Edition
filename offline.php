@@ -9,7 +9,7 @@ $tpath = $this->baseurl.'/templates/'.$this->template;
 $this->setGenerator(null);
 
 // load sheets and scripts
-$doc->addStyleSheet($tpath.'/css/offline.css?v=1'); 
+$doc->addStyleSheet($tpath.'/build/main.css'); 
 
 ?><!doctype html>
 
