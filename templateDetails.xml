@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
-<!DOCTYPE install PUBLIC "-//Joomla! 3.4//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/3.4/template-install.dtd">
+<!DOCTYPE install PUBLIC "-//Joomla! 3.8//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/3.8/template-install.dtd">
 
-<extension version="3.4" type="template" client="site" method="upgrade">
+<extension version="3.8" type="template" client="site" method="upgrade">
 	
 	<name>frontend</name>
 	<creationDate>xxxx-xx-xx</creationDate>
@@ -17,18 +17,19 @@
 	
 	<files>
 		<folder>build</folder>
-		<folder>css</folder>
 		<folder>fonts</folder>
 		<folder>html</folder>
 		<folder>images</folder>
-		<folder>inc</folder>
-		<folder>js</folder>
+        <folder>js</folder>
+		<folder>scss</folder>
 		<filename>component.php</filename>
 		<filename>error.php</filename>
 		<filename>favicon.ico</filename>
 		<filename>gulpfile.js</filename>
-		<filename>index.php</filename>
+        <filename>index.php</filename>
+		<filename>logic.php</filename>
 		<filename>offline.php</filename>
+        <filename>package-lock.json</filename>
 		<filename>package.json</filename>
 		<filename>README.md</filename>
 		<filename>template_preview.png</filename>
