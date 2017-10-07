@@ -5,6 +5,16 @@ var sass        = require('gulp-sass');
 var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
 
+// FILES
+gulp.task('files', function() {
+    gulp.src('node_modules/bootstrap/scss/**/*')
+        .pipe(gulp.dest('scss/bootstrap'));
+    gulp.src('node_modules/font-awesome/scss/**/*')
+        .pipe(gulp.dest('scss/font-awesome'));
+    gulp.src('node_modules/font-awesome/fonts/**/*')
+        .pipe(gulp.dest('fonts'));
+});
+
 // CSS
 gulp.task('sass', function() {
     return gulp.src(['scss/main.scss'])
@@ -37,5 +47,5 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch("*.php").on('change', browserSync.reload);
 });
 
-gulp.task('default', ['js','serve']);
+gulp.task('default', ['files','sass','js','serve']);
 
