@@ -1,4 +1,4 @@
-# [Blank Bootstrap Edition 5.0.0](http://blank.vc)
+# [BL4NK Bootstrap Edition 5.0](http://blank.vc)
 
 Light, powerful and free template for Joomla!
 for faster and easier web development.
@@ -23,10 +23,6 @@ Run Gulp for build and minify.
 
 The building files are stored in folder /build in template directory. See gulpfile.js to recognize automation.
 
-## Demo
-
-Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind it's only a copy'n'paste page from bootstrap theme.
-
 ## Functions
 
 * Develop with bootstrap for responsive web design
@@ -35,7 +31,7 @@ Look at [http://b.blank.vc](http://b.blank.vc) to see the source. Keep in mind i
 
 ## Addons 
 
-* [Bootstrap 4.0.0.beta](http://getbootstrap.com/)
+* [Bootstrap 4.0](http://getbootstrap.com/)
 * [Font Awesome 4.7.0](https://fortawesome.github.io/Font-Awesome/)
 
 ## PSD
