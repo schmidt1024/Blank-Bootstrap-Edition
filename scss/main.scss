@@ -1,7 +1,12 @@
+// template
+@import "template";
+
 // bootstrap
+// required
 @import "bootstrap/functions";
-@import "variables"; // @import "bootstrap/variables";
+@import "bootstrap/variables";
 @import "bootstrap/mixins";
+// optional
 @import "bootstrap/print";
 @import "bootstrap/reboot";
 @import "bootstrap/type";
@@ -48,6 +53,3 @@
 @import "font-awesome/stacked";
 @import "font-awesome/icons";
 @import "font-awesome/screen-reader";
-
-// template
-@import "template";
