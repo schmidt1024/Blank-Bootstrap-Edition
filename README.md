@@ -34,14 +34,6 @@ The building files are stored in folder /build in template directory. See gulpfi
 * [Bootstrap 4.0](http://getbootstrap.com/)
 * [Font Awesome 4.7.0](https://fortawesome.github.io/Font-Awesome/)
 
-## PSD
-
-[Download psd.zip](http://itr.im/psd) (12 MB) for faster icon and thumbnail creation. Package inlcudes following files:
-
-* App Icon Template [2.0].psd
-* template_preview.psd
-* template_thumbnail.psd
-
 ## Licence
 
 The Blank Template is opensource software released under the [GPL](http://www.gnu.org/licenses/gpl-2.0.txt).
