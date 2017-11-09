@@ -17,6 +17,10 @@ Install Node dependencies.
 
     npm install
 
+Open ``gulpfile.js`` and take a look at the serve function. The url should be match with your local Joomla installation, e.g.
+
+    http://localhost/blank/
+
 Run Gulp for build and minify.
 
     gulp
