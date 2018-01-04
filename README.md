@@ -1,4 +1,4 @@
-# [BL4NK Bootstrap Edition 5.0](http://blank.vc)
+# [BL4NK Bootstrap Edition 5.0.1](http://blank.vc)
 
 Light, powerful and free template for Joomla!
 for faster and easier web development.
@@ -30,7 +30,7 @@ The building files are stored in folder /build in template directory. See gulpfi
 ## Working files
 
 * index.php 
-* js/.script.js
+* js/script.js
 * scss/\_custom.scss
 
 ## Functions
