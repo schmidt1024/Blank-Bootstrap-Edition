@@ -27,6 +27,12 @@ Run Gulp for build and minify.
 
 The building files are stored in folder /build in template directory. See gulpfile.js to recognize automation.
 
+## Working files
+
+* index.php 
+* js/.script.js
+* scss/\_custom.scss
+
 ## Functions
 
 * Develop with bootstrap for responsive web design
