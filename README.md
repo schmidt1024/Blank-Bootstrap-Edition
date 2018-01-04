@@ -1,4 +1,4 @@
-# [BL4NK Bootstrap Edition 5.0.1](http://blank.vc)
+# [BL4NK Bootstrap Edition 5](http://blank.vc)
 
 Light, powerful and free template for Joomla!
 for faster and easier web development.
