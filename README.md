@@ -29,7 +29,7 @@ The building files are stored in folder /build in template directory. See gulpfi
 
 ## Working files
 
-* index.php 
+* index.php
 * js/script.js
 * scss/\_custom.scss
 
@@ -39,10 +39,24 @@ The building files are stored in folder /build in template directory. See gulpfi
 * Scalable and customizable vector icons
 * Customizable error, offline and print page
 
-## Addons 
+## Addons
 
 * [Bootstrap 4.0](http://getbootstrap.com/)
 * [Font Awesome 4.7.0](https://fortawesome.github.io/Font-Awesome/)
+
+## Update
+
+To keep your packages up to date install [npm-check-updates](https://www.npmjs.org/package/npm-check-updates).
+
+    npm install -g npm-check-updates
+
+Identify out of date packages and update all the versions in your package.json.
+
+    ncu -u
+
+Install the new versions of your packages based on the updated package.json.
+
+    npm update
 
 ## Licence
 
