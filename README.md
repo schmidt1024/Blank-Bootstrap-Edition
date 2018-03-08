@@ -50,11 +50,11 @@ To keep your packages up to date install [npm-check-updates](https://www.npmjs.o
 
     npm install -g npm-check-updates
 
-Identify out of date packages and update all the versions in your package.json.
+Identify out of date packages and update all the versions in your ``package.json``.
 
     ncu -u
 
-Install the new versions of your packages based on the updated package.json.
+Install the new versions of your packages based on the updated ``package.json``.
 
     npm update
 

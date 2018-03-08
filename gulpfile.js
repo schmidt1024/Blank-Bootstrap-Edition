@@ -7,11 +7,11 @@ var uglify      = require('gulp-uglify');
 
 // FILES
 gulp.task('files', function() {
-    gulp.src('node_modules/bootstrap/scss/**/*')
+    return gulp.src('node_modules/bootstrap/scss/**/*')
         .pipe(gulp.dest('scss/bootstrap'));
-    gulp.src('node_modules/font-awesome/scss/**/*')
+    return gulp.src('node_modules/font-awesome/scss/**/*')
         .pipe(gulp.dest('scss/font-awesome'));
-    gulp.src('node_modules/font-awesome/fonts/**/*')
+    return gulp.src('node_modules/font-awesome/fonts/**/*')
         .pipe(gulp.dest('fonts'));
 });
 
