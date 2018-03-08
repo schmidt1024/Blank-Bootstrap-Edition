@@ -1,10 +1,10 @@
 // VARIABLES
 var gulp        = require('gulp');
-var browserSync = require('browser-sync').create();
-var sass        = require('gulp-sass');
 var concat      = require('gulp-concat');
+var sass        = require('gulp-sass');
 var uglify      = require('gulp-uglify');
 var runSequence = require('run-sequence');
+var browserSync = require('browser-sync').create();
 
 // FILES
 gulp.task('files', function() {
@@ -33,6 +33,7 @@ gulp.task('js', function() {
         'js/script.js'
         ])
         .pipe(concat('app.js'))
+        .pipe(uglify())
         .pipe(gulp.dest('build'))
         .pipe(browserSync.stream());
 });
