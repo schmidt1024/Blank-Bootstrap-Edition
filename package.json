@@ -15,7 +15,6 @@
     "popper.js": "^1.13.0",
     "run-sequence": "^2.2.1"
   },
-  "devDependencies": {},
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
