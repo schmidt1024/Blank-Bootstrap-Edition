@@ -4,14 +4,15 @@ var browserSync = require('browser-sync').create();
 var sass        = require('gulp-sass');
 var concat      = require('gulp-concat');
 var uglify      = require('gulp-uglify');
+var runSequence = require('run-sequence');
 
 // FILES
 gulp.task('files', function() {
-    return gulp.src('node_modules/bootstrap/scss/**/*')
+    gulp.src('node_modules/bootstrap/scss/**/*')
         .pipe(gulp.dest('scss/bootstrap'));
-    return gulp.src('node_modules/font-awesome/scss/**/*')
+    gulp.src('node_modules/font-awesome/scss/**/*')
         .pipe(gulp.dest('scss/font-awesome'));
-    return gulp.src('node_modules/font-awesome/fonts/**/*')
+    gulp.src('node_modules/font-awesome/fonts/**/*')
         .pipe(gulp.dest('fonts'));
 });
 
@@ -45,8 +46,7 @@ gulp.task('serve', ['sass'], function() {
     });
     gulp.watch(['js/**/*.js'], ['js']);
     gulp.watch(['scss/**/*.scss'], ['sass']);
-    gulp.watch("*.php").on('change', browserSync.reload);
+    gulp.watch('*.php').on('change', browserSync.reload);
 });
 
-gulp.task('default', ['files','sass','js','serve']);
-
+gulp.task('default', runSequence('files','sass','js','serve'));
