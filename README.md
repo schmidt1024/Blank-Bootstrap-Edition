@@ -5,7 +5,7 @@ for faster and easier web development.
 
 ## Install
 
-Install it like a normal template in Joomla!™ backend. Then install [Node](http://nodejs.org/). This template will be built with [Gulp](http://gulpjs.com/). If you haven't used Gulp before, you need to install ``gulp`` global.
+Install it like a normal template in Joomla!™ backend. Then install [Node.js®](http://nodejs.org/). This template will be built with [Gulp](http://gulpjs.com/). If you haven't used Gulp before, you need to install ``gulp`` global.
 
     npm install -g gulp
 
@@ -13,7 +13,7 @@ Open a terminal and go to the template folder.
 
     cd C:\xampp\htdocs\joomla\templates\frontend
 
-Install Node dependencies.
+Install Node.js® dependencies.
 
     npm install
 
