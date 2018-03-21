@@ -2,7 +2,7 @@
 <!DOCTYPE install PUBLIC "-//Joomla! 3.8//DTD template 1.0//EN" "http://www.joomla.org/xml/dtd/3.8/template-install.dtd">
 
 <extension version="3.8" type="template" client="site" method="upgrade">
-	
+
 	<name>frontend</name>
 	<creationDate>xxxx-xx-xx</creationDate>
 	<author>your name</author>
@@ -10,36 +10,35 @@
 	<authorEmail>your.name@example.com</authorEmail>
 	<authorUrl>http://www.example.com</authorUrl>
 	<version>1.0.0</version>
-	<description><![CDATA[ 
+	<description><![CDATA[
 		<h1>frontend</h1>
 		<p>Created by <a href="http://www.example.com" target="_blank">your name | example.com</a>.</p>
 	]]></description>
-	
+
 	<files>
-		<folder>build</folder>
 		<folder>fonts</folder>
-        <folder>js</folder>
+    <folder>js</folder>
 		<folder>scss</folder>
 		<filename>component.php</filename>
 		<filename>error.php</filename>
 		<filename>favicon.ico</filename>
 		<filename>gulpfile.js</filename>
-        <filename>index.php</filename>
+    <filename>index.php</filename>
 		<filename>logic.php</filename>
 		<filename>offline.php</filename>
-        <filename>package-lock.json</filename>
+    <filename>package-lock.json</filename>
 		<filename>package.json</filename>
 		<filename>README.md</filename>
 		<filename>template_preview.png</filename>
 		<filename>template_thumbnail.png</filename>
 		<filename>templateDetails.xml</filename>
 	</files>
-	
+
 	<positions>
 		<position>navbar</position>
 		<position>breadcrumbs</position>
 		<position>sidebar</position>
 		<position>debug</position>
 	</positions>
-	
+
 </extension>

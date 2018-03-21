@@ -7,13 +7,9 @@ var runSequence = require('run-sequence');
 var browserSync = require('browser-sync').create();
 
 // FILES
-gulp.task('files', function() {
-    gulp.src('node_modules/bootstrap/scss/**/*')
+gulp.task('bootstrap', function() {
+    return gulp.src('node_modules/bootstrap/scss/**/*')
         .pipe(gulp.dest('scss/bootstrap'));
-    gulp.src('node_modules/font-awesome/scss/**/*')
-        .pipe(gulp.dest('scss/font-awesome'));
-    gulp.src('node_modules/font-awesome/fonts/**/*')
-        .pipe(gulp.dest('fonts'));
 });
 
 // CSS
@@ -43,11 +39,12 @@ gulp.task('serve', ['sass'], function() {
     browserSync.init({
         // server: './'' // default server
         // proxy: 'http://localhost:8888/' // mamp
-        proxy: 'http://localhost/blank/' // usualy
+        proxy: 'http://localhost/your-website/' // usualy
     });
     gulp.watch(['js/**/*.js'], ['js']);
     gulp.watch(['scss/**/*.scss'], ['sass']);
     gulp.watch('*.php').on('change', browserSync.reload);
 });
 
-gulp.task('default', runSequence('files','sass','js','serve'));
+gulp.task('default', runSequence('bootstrap','sass','js','serve'));
+
