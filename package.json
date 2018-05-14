@@ -6,7 +6,7 @@
   "dependencies": {
     "bootstrap": "^4.0.0",
     "browser-sync": "^2.23.6",
-    "gulp": "^3.9.1",
+    "gulp": "^4.0.0",
     "gulp-concat": "^2.2.0",
     "gulp-sass": "^4.0.1",
     "gulp-uglify": "^3.0.0",
@@ -32,5 +32,8 @@
   "bugs": {
     "url": "https://github.com/Bloggerschmidt/Blank-Bootstrap-Edition/issues"
   },
-  "homepage": "https://github.com/Bloggerschmidt/Blank-Bootstrap-Edition#readme"
+  "homepage": "https://github.com/Bloggerschmidt/Blank-Bootstrap-Edition#readme",
+  "devDependencies": {
+    "gulp": "^4.0.0"
+  }
 }
