@@ -3,7 +3,6 @@ var gulp        = require('gulp');
 var concat      = require('gulp-concat');
 var sass        = require('gulp-sass');
 var uglify      = require('gulp-uglify');
-var runSequence = require('run-sequence');
 var browserSync = require('browser-sync').create();
 
 // FILES
@@ -41,10 +40,10 @@ gulp.task('serve', ['sass'], function() {
         // proxy: 'http://localhost:8888/' // mamp
         proxy: 'http://localhost/your-website/' // usualy
     });
-    gulp.watch(['js/**/*.js'], ['js']);
-    gulp.watch(['scss/**/*.scss'], ['sass']);
+    gulp.watch('js/**/*.js', gulp.series('js'));
+    gulp.watch('scss/**/*.scss', gulp.series('sass'));
     gulp.watch('*.php').on('change', browserSync.reload);
 });
 
-gulp.task('default', runSequence('bootstrap','sass','js','serve'));
+gulp.task('default', gulp.parallel('bootstrap','sass','js','serve'));
 
