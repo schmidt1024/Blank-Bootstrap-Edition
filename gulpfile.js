@@ -34,7 +34,7 @@ gulp.task('js', function() {
 });
 
 // SERVE
-gulp.task('serve', ['sass'], function() {
+gulp.task('serve', function() {
     browserSync.init({
         // server: './'' // default server
         // proxy: 'http://localhost:8888/' // mamp
@@ -45,5 +45,5 @@ gulp.task('serve', ['sass'], function() {
     gulp.watch('*.php').on('change', browserSync.reload);
 });
 
-gulp.task('default', gulp.parallel('bootstrap','sass','js','serve'));
+gulp.task('default', gulp.series('bootstrap','sass','js','serve'));
 
