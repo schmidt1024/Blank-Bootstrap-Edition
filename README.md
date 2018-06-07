@@ -7,7 +7,7 @@ for faster and easier web development.
 
 Install it like a normal template in Joomla!™ backend. Then install [Node.js®](http://nodejs.org/). This template will be built with [Gulp](http://gulpjs.com/). If you haven't used Gulp before, you need to install ``gulp`` global.
 
-    npm install -g gulp
+    npm install gulp-cli -g
 
 Open a terminal and go to the template folder.
 
