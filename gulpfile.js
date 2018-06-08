@@ -42,7 +42,7 @@ gulp.task('serve', function() {
     });
     gulp.watch('js/**/*.js', gulp.series('js'));
     gulp.watch('scss/**/*.scss', gulp.series('sass'));
-    gulp.watch('*.php').on('change', browserSync.reload);
+    gulp.watch('**/*.php').on('change', browserSync.reload);
 });
 
 gulp.task('default', gulp.series('bootstrap','sass','js','serve'));
