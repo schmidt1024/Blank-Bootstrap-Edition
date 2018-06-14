@@ -23,7 +23,7 @@
   },
   "homepage": "https://github.com/Bloggerschmidt/Blank-Bootstrap-Edition#readme",
   "devDependencies": {
-    "bootstrap": "^4.0.0",
+    "bootstrap": "^4.1.1",
     "browser-sync": "^2.23.6",
     "gulp": "github:gulpjs/gulp#4.0",
     "gulp-concat": "^2.2.0",
