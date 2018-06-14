@@ -44,6 +44,10 @@ The building files are stored in folder /build in template directory. See gulpfi
 * [Bootstrap](http://getbootstrap.com/)
 * [Font Awesome](https://fortawesome.github.io/Font-Awesome/)
 
+## Tutorial
+
+There is a [Bootstrap tutorial](https://schmidt.gitbook.io/bl4nk/bootstrap-tutorial) for beginners and new Joomla!™ developers.
+
 ## Update
 
 To keep your packages up to date install [npm-check-updates](https://www.npmjs.org/package/npm-check-updates).
@@ -64,4 +68,4 @@ The BL4NK Template is opensource software released under the [GPL](http://www.gn
 
 ## BL4NK
 
-Take a look at [BL4NK \(without Bootstrap\)](https://github.com/Bloggerschmidt/Blank).
+Take a look at [BL4NK \(without Bootstrap\)](https://github.com/Bloggerschmidt/Blank) and the [full documentation](https://schmidt.gitbook.io/bl4nk/) of it.
