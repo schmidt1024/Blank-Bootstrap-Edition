@@ -4,6 +4,7 @@ var concat      = require('gulp-concat');
 var sass        = require('gulp-sass');
 var uglify      = require('gulp-uglify');
 var browserSync = require('browser-sync').create();
+var zip         = require('gulp-zip');
 
 // FILES
 gulp.task('bootstrap', function() {
@@ -43,6 +44,17 @@ gulp.task('serve', function() {
     gulp.watch('js/**/*.js', gulp.series('js'));
     gulp.watch('scss/**/*.scss', gulp.series('sass'));
     gulp.watch('**/*.php').on('change', browserSync.reload);
+});
+
+// ZIP
+gulp.task('zip', function() {
+    return gulp.src([
+      '**/*',
+      '!node_modules/**',
+      '!dist/**'
+      ])
+      .pipe(zip('frontend.zip'))
+      .pipe(gulp.dest('../'));
 });
 
 gulp.task('default', gulp.series('bootstrap','sass','js','serve'));
