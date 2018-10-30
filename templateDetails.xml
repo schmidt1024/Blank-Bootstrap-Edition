@@ -16,9 +16,9 @@
 	]]></description>
 
 	<files>
-		<folder>fonts</folder>
     <folder>js</folder>
 		<folder>scss</folder>
+    <folder>webfonts</folder>
 		<filename>component.php</filename>
 		<filename>error.php</filename>
 		<filename>favicon.ico</filename>
