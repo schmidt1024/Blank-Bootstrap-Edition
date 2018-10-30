@@ -1,10 +1,13 @@
 // VARIABLES
-var gulp        = require('gulp');
-var concat      = require('gulp-concat');
-var sass        = require('gulp-sass');
-var uglify      = require('gulp-uglify');
-var browserSync = require('browser-sync').create();
-var zip         = require('gulp-zip');
+const gulp          = require('gulp');
+const concat        = require('gulp-concat');
+const sass          = require('gulp-sass');
+const postcss       = require('gulp-postcss');
+const autoprefixer  = require('autoprefixer');
+const flexboxfixer  = require('postcss-flexboxfixer');
+const uglify        = require('gulp-uglify');
+const browserSync   = require('browser-sync').create();
+const zip           = require('gulp-zip');
 
 // FILES
 gulp.task('bootstrap', function() {
@@ -16,6 +19,8 @@ gulp.task('bootstrap', function() {
 gulp.task('sass', function() {
     return gulp.src(['scss/main.scss'])
         .pipe(sass({outputStyle: 'compressed'}))
+        .pipe(postcss([ autoprefixer() ]))
+        .pipe(postcss([ flexboxfixer() ]))
         .pipe(gulp.dest('build'))
         .pipe(browserSync.stream());
 });
@@ -41,9 +46,9 @@ gulp.task('serve', function() {
         // proxy: 'http://localhost:8888/' // mamp
         proxy: 'http://localhost/your-website/' // usualy
     });
-    gulp.watch('js/**/*.js', gulp.series('js'));
-    gulp.watch('scss/**/*.scss', gulp.series('sass'));
-    gulp.watch('**/*.php').on('change', browserSync.reload);
+    gulp.watch('js/**/*.js', gulp.series('js', 'zip'));
+    gulp.watch('scss/**/*.scss', gulp.series('sass', 'zip'));
+    gulp.watch('**/*.php', gulp.series('zip')).on('change', browserSync.reload);
 });
 
 // ZIP
@@ -57,5 +62,5 @@ gulp.task('zip', function() {
       .pipe(gulp.dest('../'));
 });
 
-gulp.task('default', gulp.series('bootstrap','sass','js','serve'));
+gulp.task('default', gulp.series('bootstrap','sass','js','zip','serve'));
 
