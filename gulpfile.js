@@ -10,9 +10,14 @@ const browserSync   = require('browser-sync').create();
 const zip           = require('gulp-zip');
 
 // FILES
-gulp.task('bootstrap', function() {
-    return gulp.src('node_modules/bootstrap/scss/**/*')
+gulp.task('files', function() {
+    var bootstrap = gulp.src('node_modules/bootstrap/scss/**/*')
         .pipe(gulp.dest('scss/bootstrap'));
+    var fontawesome = gulp.src('node_modules/@fortawesome/fontawesome-free/scss/**/*')
+        .pipe(gulp.dest('scss/fontawesome'));
+    var webfonts = gulp.src('node_modules/@fortawesome/fontawesome-free/webfonts/**/*')
+        .pipe(gulp.dest('webfonts'));
+    return (bootstrap, fontawesome, webfonts);
 });
 
 // CSS
@@ -62,5 +67,5 @@ gulp.task('zip', function() {
       .pipe(gulp.dest('../'));
 });
 
-gulp.task('default', gulp.series('bootstrap','sass','js','zip','serve'));
+gulp.task('default', gulp.series('files','sass','js','zip','serve'));
 
