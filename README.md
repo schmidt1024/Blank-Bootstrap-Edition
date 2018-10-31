@@ -25,7 +25,7 @@ Run Gulp for build and minify.
 
     gulp
 
-The building files are stored in folder /build in template directory. See gulpfile.js to recognize automation.
+The building files are stored in folder /build in template directory and a zip package will be created one directory above, the level of the template folders. See gulpfile.js to recognize automation.
 
 ## Working files
 
